@@ -1,9 +1,15 @@
 /* Your CSS Code here. */
 .holder {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two equal columns */
-  grid-template-rows: 1fr 1fr; /* Two equal rows */
+  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+  grid-template-rows: repeat(2, 1fr); /* Two equal rows */
   width: 200px;
   height: 200px;
-  gap: 5px; /* Adjust the gap between items as needed */
+}
+
+/* Optional: You can style the grid items if needed */
+.holder > * {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
 }
